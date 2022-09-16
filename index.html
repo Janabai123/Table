@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+    
+</head>
+
+<body>
+
+    <TABLE align="center" width="500px" border="1"  cellspacing="0" id="table">
+        <TR>
+
+            <TH>Name</TH>
+            <TH>Country</TH>
+            <TH>Age</TH>
+            <TH>Total</TH>
+
+        </TR>
+        <TR id="row1">
+            <!-- 1 -->
+            <TD align="center" width="25%">
+
+                <input onblur="findTotalcol1()" type="text" name="col1" class="row1" /><br>
+
+            </TD>
+            <TD align="center" width="25%">
+
+                <input onblur="findTotalcol2()" type="text" name="col2" class="row1" /><br>
+
+            </TD>
+
+            <TD align="center" width="25%">
+
+                <input onblur="findTotalcol3()" type="text" name="col3" class="row1" /><br>
+
+            </TD>
+
+            <TD align="center" width="25%">
+
+                Total row:<input onblur="findTotalrow1()" type="text" id="totalrow1" /><br>
+
+            </TD>
+            <TD>
+                
+                <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+            </TD>
+        </TR>
+        <TR id="row2">
+            <!-- 2 -->
+            <TD align="center" width="25%">
+
+                <input onblur="findTotalcol1()" type="text" name="col1" class="row2" /><br>
+
+            </TD>
+
+            <TD align="center" width="25%">
+
+                <input onblur="findTotalcol2()" type="text" name="col2" class="row2" /><br>
+
+            </TD>
+
+            <TD align="center" width="25%">
+
+                <input onblur="findTotalcol3()" type="text" name="col3" class="row2" /><br>
+
+            </TD>
+            <TD align="center" width="25%">
+
+                Total row:<input onblur="findTotalrow2()" type="text" id="totalrow2" /><br>
+
+            </TD>
+
+            <TD>
+               
+                <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+            </TD>
+        </TR>
+
+        <TR id="row3">
+            <!-- 3 -->
+            <TD align="center" width="30%">
+
+                <input onblur="findTotalcol1()" type="text" name="col1" class="row3"><br>
+
+            </TD>
+
+
+            <TD align="center" width="30%">
+
+                <input onblur="findTotalcol2()" type="text" name="col2" class="row3" /><br>
+
+            </TD>
+
+            <TD align="center" width="30%">
+
+                <input onblur="findTotalcol3()" type="text" name="col3" class="row3" /><br>
+
+            </TD>
+
+            <TD align="center" width="25%">
+
+                Total row: <input onblur="findTotalrow3()" type="text" id="totalrow3" /><br>
+
+            </TD>
+            <TD>
+                
+                <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+            </TD>
+
+        </TR>
+        <TR id="row4">
+            <!-- total column -->
+            <TD align="center" width="30%">
+
+                Total col: <input type="text" name="totalcol1" id="totalcol1" />
+
+            </TD>
+
+            <TD align="center" width="30%">
+
+                Total col: <input type="text" name="totalcol2" id="totalcol2" />
+
+            </TD>
+            <TD align="center" width="30%">
+
+                Total col: <input type="text" name="totalcol3" id="totalcol3" />
+
+            </TD>
+        </TR>
+
+        <TR id="row5">
+
+            <TD><input type="text" id="new_name"></TD>
+            <TD><input type="text" id="new_country"></TD>
+            <TD><input type="text" id="new_age"></TD>
+            <TD><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+
+        </TR>
+    </TABLE>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
